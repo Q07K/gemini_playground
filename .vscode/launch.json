@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "streamlit debug",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "streamlit",
+            "args": [
+                "run",
+                "main.py",
+                "--server.address",
+                "0.0.0.0",
+                "--server.port",
+                "4444",
+                "--browser.serverAddress",
+                "192.168.0.9",
+                "--server.runOnSave",
+                "true"
+            ],
+        }
+    ]
+}
