@@ -20,7 +20,8 @@ flag = gemini.valid_api_key()
 if flag:
     model_select.selectbox(
         label="Models",
-        options=gemini.get_model_list(),
+        # options=gemini.get_model_list(),
+        options=gemini.get_model_list_legacy(),
         key="model_name",
     )
 

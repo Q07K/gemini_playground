@@ -4,6 +4,16 @@ import google.generativeai as genai
 from google.auth.exceptions import DefaultCredentialsError
 
 
+def get_model_list_legacy():
+    return [
+        "models/gemini-1.5-pro",
+        "models/gemini-1.5-pro-001",
+        "models/gemini-1.5-pro-002",
+        "models/gemini-2.0-pro-exp",
+        "models/gemini-2.0-flash-thinking-exp",
+    ]
+
+
 def get_model_list():
     return [
         model.name
